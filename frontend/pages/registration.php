@@ -26,7 +26,26 @@
             required>
 
         <?php
-        echo"Silence is golden";
+        session_start();
+
+        include_once dirname(__FILE__) . '/../function/user.php';
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (!empty($_POST['nickname']) && !empty($_POST['password'])) { //se la variabile mail o password che devono essere inviate non sono vuote all'ora si invia
+        
+                $pw = hash("sha256", $_POST['password']);
+
+                $data = array(
+                    //Immetto i dati all'interno di data
+                    "nickname" => $_POST['nickname'],
+                    "pw" => $pw,
+                );
+                $err = logon($data);
+                if (isset($err)) {
+                    echo ('<p class="text-danger">Errore nella registrazione, riprova più tardi!</p>');
+                }
+            }
+        }
         ?>
         <div class="row">
             <button class="btn btn-lg btn-primary btn-block mx-auto" type="submit">Registrati</button>

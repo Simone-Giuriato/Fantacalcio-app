@@ -27,10 +27,52 @@
             required>
 
         <?php
-        echo"Silence is golden";
+       // session_start();
+
+        include_once dirname(__FILE__) . '\function\user.php';
+        include_once dirname(__FILE__) . '\function\squad.php';
+       // include_once dirname(__FILE__) . '\function\league.php';
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (!empty($_POST['nickname']) && !empty($_POST['password'])) { //se la variabile mail o password che devono essere inviate non sono vuote all'ora si invia
+        
+                $pw = hash("sha256", $_POST['password']);
+
+                $data = array(
+                    //Immetto i dati all'interno di data
+                    "nickname" => $_POST['nickname'],
+                    "pw" => $pw,
+                );
+
+                if (login($data) == -1) {
+                    echo ('<p class=text-danger>Email o password errata</p>');
+                } else {
+                    $id_squad = getSquadId($_SESSION['user_id']);
+                    if ($id_squad == -1) {
+                        echo '<p class="text-danger">Errore riprova più tardi!</p>';
+                    } elseif ($id_squad == -2) {
+                        header('Location: pages/homepage.php');
+
+                    } else {
+                        $_SESSION['id_squad'] = $id_squad;
+                        $id_league = getLeagueBySquad($_SESSION['id_squad']);
+                        if ($id_league == -1) {
+                            echo '<p class="text-danger">Errore riprova più tardi!</p>';
+                        } elseif ($id_league == -2) {
+                            header('Location: pages/homepage.php');
+                        } else {
+                            $_SESSION['id_league'] = $id_league;
+                            header('Location: pages/homepage.php');
+                        }
+                    }
+                }
+            } else {
+                echo ('<p class="text-danger">Campo richiesto</p>');
+            }
+        }
         ?>
 
-            <div class="row">
+        <div class="row">
             <button class="btn btn-lg btn-primary btn-block mx-auto" type="submit">Accedi</button>
             <div class="row">
                 <a class="text-dark" href="pages/registration.php" style="text-decoration: none; font-size:13px;">
@@ -43,7 +85,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
