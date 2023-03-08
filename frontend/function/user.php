@@ -2,7 +2,7 @@
 
 function login($data)
 {
-    $url = 'http://localhost/fantacalcio/backend/api/user/login.php';
+    $url = 'http://localhost/fantacalcio-app/backend/api/user/login.php';
 
     $curl = curl_init($url); //inizializza una nuova sessione di cUrl
     //Curl contiene il return del curl_init 
@@ -38,7 +38,7 @@ function login($data)
 
 function logon($data)
 {
-    $url = 'http://localhost/fantacalcio/backend/api/user/registration.php';
+    $url = 'http://localhost/fantacalcio-app/backend/api/user/registration.php';
 
     $curl = curl_init($url); //inizializza una nuova sessione di cUrl
     //Curl contiene il return del curl_init 
@@ -63,6 +63,8 @@ function logon($data)
     curl_close($curl); //chiudo sessione
 
     $response = json_decode($responseJson); //decodifico la response dal json
+
+    var_dump($response);
 
     if ($response->message == "1") //response == true vuol dire sessione senza errori
     {

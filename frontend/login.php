@@ -27,11 +27,11 @@
             required>
 
         <?php
-       // session_start();
+        session_start();
 
         include_once dirname(__FILE__) . '\function\user.php';
         include_once dirname(__FILE__) . '\function\squad.php';
-       // include_once dirname(__FILE__) . '\function\league.php';
+        include_once dirname(__FILE__) . '\function\league.php';
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (!empty($_POST['nickname']) && !empty($_POST['password'])) { //se la variabile mail o password che devono essere inviate non sono vuote all'ora si invia
@@ -47,7 +47,7 @@
                 if (login($data) == -1) {
                     echo ('<p class=text-danger>Email o password errata</p>');
                 } else {
-                    $id_squad = getSquadId($_SESSION['user_id']);
+                    /*$id_squad = getSquadId($_SESSION['user_id']);
                     if ($id_squad == -1) {
                         echo '<p class="text-danger">Errore riprova più tardi!</p>';
                     } elseif ($id_squad == -2) {
@@ -64,7 +64,8 @@
                             $_SESSION['id_league'] = $id_league;
                             header('Location: pages/homepage.php');
                         }
-                    }
+                    }*/
+                    header('Location: pages/homepage.php'); //cosa temporanea 
                 }
             } else {
                 echo ('<p class="text-danger">Campo richiesto</p>');

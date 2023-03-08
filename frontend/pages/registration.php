@@ -40,8 +40,9 @@
                     "nickname" => $_POST['nickname'],
                     "pw" => $pw,
                 );
+
                 $err = logon($data);
-                if (isset($err)) {
+                if ($err == "-1") {
                     echo ('<p class="text-danger">Errore nella registrazione, riprova più tardi!</p>');
                 }
             }
