@@ -4,7 +4,7 @@ session_start();
 if (empty($_SESSION['user_id'])) {
     header('location: ../login.php');
 }
-
+//manca della roba per direzinare l'utente nella lega 
 ?>
 
 <!doctype html>
@@ -32,24 +32,24 @@ if (empty($_SESSION['user_id'])) {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/img/murinho.png" class="d-block w-100" alt="...">
+      <img src="../assets/img/moumanette.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Josè Mourinho</h5>
+        <p>Mourinho squalificato 2 giornate per insulti all'arbitro.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/img/logo.png" class="d-block w-100" alt="...">
+      <img src="../assets/img/inzaghi.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>Simone Inzaghi</h5>
+        <p>Spiaze... per il gorgonzola</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/img/logo.png" class="d-block w-100" alt="...">
+      <img src="../assets/img/allegri.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>Max Allegri</h5>
+        <p>Ma c'è poco da stare allegri.</p>
       </div>
     </div>
   </div>
@@ -64,3 +64,14 @@ if (empty($_SESSION['user_id'])) {
 </div>
 
 </body>
+</html>
+
+<style>
+
+  #carouselExampleCaptions{
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+  }
+
+</style>
