@@ -14,6 +14,15 @@ class League{
         $result = $this->conn->query($sql);
         return $result;
     }
+    function getArchiveLeague()
+    {
+        $sql = "SELECT id, name, id_trustee
+        FROM league
+        WHERE status=0
+        order by name asc;";
+
+        return $sql;
+    }
 
     function checkTrustee($id)
     {
@@ -27,6 +36,15 @@ class League{
         $sql = "SELECT id, name, id_trustee
         FROM league
         where id_trustee = '" . $id_trustee . "' AND status=0;";
+        return $sql;
+    }
+    function getArchiveLeagueMoreDetails()
+    {
+        $sql = "SELECT l.id, l.name, u.nickname as 'id_trustee'
+        FROM league l
+        inner join user u on u.id=l.id_trustee
+        WHERE status=0
+        order by name asc;";
         return $sql;
     }
 
