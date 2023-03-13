@@ -11,7 +11,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-info-subtle">        <!-- background-bootstrap-->
   <div class="container-fluid">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="homepage.php">
       <img src="../assets/img/logo.png" alt="Bootstrap" width="30" height="24">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -37,7 +37,7 @@
            Leghe
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Crea</a></li>
+            <li><a class="dropdown-item" href="createLeague.php">Crea</a></li>
             <li><a class="dropdown-item" href="#">Iscriviti</a></li>
           </ul>
         </li>
