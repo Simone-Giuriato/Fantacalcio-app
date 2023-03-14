@@ -29,7 +29,6 @@ class Squad_League
         ";
         return $sql;
     }
-
     function getSquadJoinLeague($id)
     {
         $sql = "select s.id, s.name, u.nickname 
@@ -41,6 +40,8 @@ class Squad_League
         order by s.name asc;";
         return $sql;
     }
+
+    
    
 }
 ?>

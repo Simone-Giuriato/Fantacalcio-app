@@ -1,7 +1,7 @@
 <?php
 function createLeague($data)
 {
-    $url = 'http://localhost/fantacalcio-app/backend/api/league/createLeague.php';
+    $url = 'http://localhost/Fantacalcio-app/backend/api/league/createLeague.php';
 
     $curl = curl_init($url); //inizializza una nuova sessione di cUrl
     //Curl contiene il return del curl_init 
@@ -37,7 +37,7 @@ function createLeague($data)
 
 function getLeagueByTrusteeId($id)
 {
-    $url = 'http://localhost/fantacalcio-app/backend/api/league/getLeagueByTrustee.php?id_trustee=' . $id;
+    $url = 'http://localhost/Fantacalcio-app/backend/api/league/getLeagueByTrustee.php?id_trustee=' . $id;
 
     $json_data = file_get_contents($url);
     if ($json_data != false) {
@@ -64,7 +64,7 @@ function getLeagueByTrusteeId($id)
 
 function joinLeague($data)
 {
-    $url = 'http://localhost/fantacalcio-app/backend/api/squad_league/joinLeague.php';
+    $url = 'http://localhost/Fantacalcio-app/backend/api/squad_league/joinLeague.php';
 
     $curl = curl_init($url); //inizializza una nuova sessione di cUrl
     //Curl contiene il return del curl_init 
@@ -101,7 +101,7 @@ function joinLeague($data)
 function getArchiveLeague()
 {
 
-    $url = 'http://localhost/fantacalcio-app/backend/api/league/getArchiveLeague.php';
+    $url = 'http://localhost/Fantacalcio-app/backend/api/league/getArchiveLeague.php';
 
     $json_data = file_get_contents($url);
 
@@ -130,7 +130,7 @@ function getArchiveLeague()
 function getRanking($id)
 {
 
-    $url = 'http://localhost/fantacalcio-app/backend/api/league/getRanking.php?id_league=' . $id;
+    $url = 'http://localhost/Fantacalcio-app/backend/api/league/getRanking.php?id_league=' . $id;
 
     $json_data = file_get_contents($url);
 
@@ -157,7 +157,7 @@ function getRanking($id)
 
 function getLeagueBySquad($id)
 {
-    $url = 'http://localhost/fantacalcio-app/backend/api/squad_league/getLeagueBySquad.php?id_squad=' . $id;
+    $url = 'http://localhost/Fantacalcio-app/backend/api/squad_league/getLeagueBySquad.php?id_squad=' . $id;
 
     $json_data = file_get_contents($url);
     $decode_data = json_decode($json_data, $assoc = true);
@@ -189,7 +189,7 @@ function getLeagueBySquad($id)
 function getArchiveLeagueMoreDetails()
 {
 
-    $url = 'http://localhost/fantacalcio-app/backend/api/league/getArchiveLeagueMoreDetails.php';
+    $url = 'http://localhost/Fantacalcio-app/backend/api/league/getArchiveLeagueMoreDetails.php';
 
     $json_data = file_get_contents($url);
 
@@ -217,12 +217,41 @@ function getArchiveLeagueMoreDetails()
 
 function checkTrustee($id)
 {
-    $url = 'http://localhost/fantacalcio-app/backend/api/league/checkTrustee.php?id_user=' . $id;
+    $url = 'http://localhost/Fantacalcio-app/backend/api/league/checkTrustee.php?id_user=' . $id;
 
     $json_data = file_get_contents($url);
     $decode_data = json_decode($json_data, $assoc = true);
 
     return $decode_data['message'];
+}
+
+function getSquadJoinLeague($id_league)
+{
+
+    $url = 'http://localhost/Fantacalcio-app/backend/api/squad_league/getSquadJoinLeague.php?id_league=' . $id_league;
+
+    $json_data = file_get_contents($url);
+    $decode_data = json_decode($json_data, $assoc = true);
+
+    if ($decode_data['message'] != "-1") {
+        $squad_data = $decode_data;
+        $squad_arr = array();
+        if (!empty($squad_data)) {
+            foreach ($squad_data as $squad) {
+                $squad_record = array(
+                    'id' => $squad['id'],
+                    'name' => $squad['name'],
+                    'nickname' => $squad['nickname'],
+                );
+                array_push($squad_arr, $squad_record);
+            }
+            return $squad_arr;
+        } else {
+            return -1;
+        }
+    } else {
+        return -1;
+    }
 }
 
 ?>
