@@ -229,7 +229,7 @@ function getSquadJoinLeague($id_league)
 {
 
     $url = 'http://localhost/Fantacalcio-app/backend/api/squad_league/getSquadJoinLeague.php?id_league=' . $id_league;
-
+   
     $json_data = file_get_contents($url);
     $decode_data = json_decode($json_data, $assoc = true);
 
