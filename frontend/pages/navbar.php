@@ -65,6 +65,10 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#">Visualizza</a></li>           
           </ul>
+          <a href="../function/logout.php">
+                    <button type="button" class="btn btn-outline-danger">Esci
+                    </button>
+          </a>
         </li>
 
       </ul>

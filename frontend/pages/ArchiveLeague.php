@@ -51,12 +51,12 @@ if (empty($_SESSION['user_id'])) {
                                 </div>
                             </div>
                             <div class="col-md-3 mt-4">
-                                <?php if (empty($_SESSION['id_league'])): ?>
+                                <!--<?php //if (empty($_SESSION['id_league'])): ?>-->
                                     <a
                                         href="joinLeague.php?id_league=<?php echo ($row['id']) ?>&name=<?php echo ($row['name']) ?>">
                                         <button class="btn btn-outline-primary">Iscriviti</button>
                                     </a>
-                                <?php endif ?>
+                                <!--<?php //endif ?>-->
                             </div>
                         </div>
                     </div>

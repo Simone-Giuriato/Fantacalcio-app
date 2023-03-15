@@ -227,6 +227,7 @@ function checkTrustee($id)
 
 function getSquadJoinLeague($id_league)
 {
+    var_dump($id_league);
 
     $url = 'http://localhost/Fantacalcio-app/backend/api/squad_league/getSquadJoinLeague.php?id_league=' . $id_league;
    
