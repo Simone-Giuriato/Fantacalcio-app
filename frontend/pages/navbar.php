@@ -48,6 +48,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="getMySquad.php">Visualizza</a></li>
+            <li><a class="dropdown-item" href="squadOnLeague.php">Fai squadra</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

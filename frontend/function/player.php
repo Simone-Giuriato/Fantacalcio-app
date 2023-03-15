@@ -1,7 +1,7 @@
 <?php
 function getArchivePlayer()
 {
-    $url = 'http://localhost/fantacalcio/backend/api/player/getArchivePlayer.php';
+    $url = 'http://localhost/fantacalcio-app/backend/api/player/getArchivePlayer.php';
 
     $json_data = file_get_contents($url);
 
