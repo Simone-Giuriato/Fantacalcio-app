@@ -42,8 +42,9 @@ function getSquadId($id)
 
     $json_data = file_get_contents($url);
     $decode_data = json_decode($json_data, $assoc = true);
-    if ($decode_data['message'] == "-2") {
-        return -2;
+   
+    if ($decode_data == "-2") {
+        return -2;  
     } else {
         if ($json_data != false) {
             $squad_data = $decode_data;

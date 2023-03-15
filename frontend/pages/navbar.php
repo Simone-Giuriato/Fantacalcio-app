@@ -37,9 +37,9 @@
            Leghe
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="joinLeague.php">Partecipa ad una lega</a></li>
+          <!--<li><a class="dropdown-item" href="joinLeague.php">Partecipa ad una lega</a></li>-->
             <li><a class="dropdown-item" href="createLeague.php">Crea una lega</a></li>
-            <li><a class="dropdown-item" href="archiveLeague.php">Visualizza le tue Leghe</a></li>
+            <li><a class="dropdown-item" href="archiveLeague.php">Visualizza o partecipa alle leghe</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

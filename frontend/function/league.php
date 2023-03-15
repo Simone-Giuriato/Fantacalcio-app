@@ -24,9 +24,7 @@ function createLeague($data)
     $responseJson = curl_exec($curl); //eseguo
 
     curl_close($curl); //chiudo sessione
-
     $response = json_decode($responseJson); //decodifico la response dal json
-
     if ($response->message == true) //response == true vuol dire sessione senza errori
     {
         return 1;
@@ -89,7 +87,6 @@ function joinLeague($data)
     curl_close($curl); //chiudo sessione
 
     $response = json_decode($responseJson); //decodifico la response dal json
-
     if ($response->message == true) //response == true vuol dire sessione senza errori
     {
         return 1;
@@ -227,7 +224,6 @@ function checkTrustee($id)
 
 function getSquadJoinLeague($id_league)
 {
-    var_dump($id_league);
 
     $url = 'http://localhost/Fantacalcio-app/backend/api/squad_league/getSquadJoinLeague.php?id_league=' . $id_league;
    
