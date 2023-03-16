@@ -56,7 +56,7 @@ function addPlayerToSquad($data)
     curl_close($curl); //chiudo sessione
 
     $response = json_decode($responseJson); //decodifico la response dal json
-    
+  
     return $response->message;
 }
 
