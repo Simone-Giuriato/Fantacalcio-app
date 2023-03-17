@@ -102,49 +102,8 @@ if (empty($_SESSION['user_id'])) {
                 </div>
             <?php endif ?>
 
-            <div>
-                <canvas class="mt-5" id="myChart"></canvas>
-            </div>
-
         <?php endif ?>
 
-
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-        <script type="text/javascript">
-            var bar_progress = document.getElementById("progress-matches");
-            var num = bar_progress.getAttribute("value");
-            var league = document.getElementById("league");
-            var id_league = league.getAttribute("value");
-
-            const ctx = document.getElementById('myChart');
-
-            fetch("http://localhost/fantacalcio/backend/api/match/getLastMatch.php?id_league=" + id_league + "&number_match=" + num)
-                .then((response) => response.json())
-                .then((data) => {
-                    console.log(data);
-                    new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: data.map(row => row.name),
-                            datasets: [{
-                                label: 'Punteggi',
-                                data: data.map(row => row.score),
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
-                                }
-                            },
-                            backgroundColor: '#FFB1C1',
-                        }
-                    });
-                });
-        </script>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
