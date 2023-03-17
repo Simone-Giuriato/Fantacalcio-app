@@ -52,10 +52,6 @@ if (empty($_SESSION['user_id'])) {
                         </li>
                     <?php endforeach ?>
                 </ul>
-
-            </div>
-            <div class="col d-flex justify-content-center">
-                <img src="../assets/img/campoDaCalcio.webp" class="img-fluid" alt="Campo da calcio">
             </div>
         </div>
         <div class="container mt-5 mb-4">

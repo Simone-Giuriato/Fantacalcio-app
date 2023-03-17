@@ -20,8 +20,11 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
 </head>
 
+
+
 <body>
     <?php require_once(__DIR__ . '\navbar.php'); ?>
+    
     <div class="mx-auto" style="width: 50%; padding: 30px 0px">
         <h2>Crea la tua lega!</h2>
         <form method="post" style="margin-top: 20px;">

@@ -20,24 +20,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <!--<li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Leghe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " href="#">Giornate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href= "#">Non los o</a>
-        </li>
-        <li class="nav-item">       
-          <a class="nav-link active" href= "#">Non so</a>
-      </li>-->
+  
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Leghe
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <!--<li><a class="dropdown-item" href="joinLeague.php">Partecipa ad una lega</a></li>-->
             <li><a class="dropdown-item" href="createLeague.php">Crea una lega</a></li>
             <li><a class="dropdown-item" href="archiveLeague.php">Visualizza o partecipa alle leghe</a></li>
           </ul>

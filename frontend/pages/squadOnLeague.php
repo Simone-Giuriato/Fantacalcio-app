@@ -23,7 +23,7 @@ if (empty($_SESSION['user_id'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo.svg">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
 </head>
 
 <body>
@@ -42,7 +42,7 @@ if (empty($_SESSION['user_id'])) {
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <img src="../assets/img/Stemma_League.png" class="img-thumbnail" alt="..."
+                                <img src="../assets/img/logo.png" class="img-thumbnail" alt="..."
                                     style="width: 100px; height:100px; ">
                             </div>
                             <div class="col-md-4">
