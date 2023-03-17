@@ -65,12 +65,7 @@ if (empty($_SESSION['user_id'])) {
         </div>
     </div>
 
-<<<<<<< HEAD
-        
-=======
 
-    
->>>>>>> e7bf59e30f362c5a605a74994c68e4a52329f1cf
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
