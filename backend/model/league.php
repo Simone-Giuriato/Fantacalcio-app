@@ -47,6 +47,16 @@ class League{
         order by name asc;";
         return $sql;
     }
+    function getRanking($id)
+    {
+        $sql = "SELECT s.name, s.score
+        FROM squad_league sl
+        INNER JOIN squad s on s.id=sl.id_squad
+        inner join league l on l.id = sl.id_league
+        where sl.id_league=" . $id . " and l.status=0
+        order by s.score desc;";
+        return $sql;
+    }
 
 }
 ?>

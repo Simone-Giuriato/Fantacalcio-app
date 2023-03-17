@@ -7,6 +7,7 @@ if (empty($_SESSION['user_id'])) {
 
 ?>
 
+
 <!doctype html>
 <html lang="en">
 
@@ -21,6 +22,7 @@ if (empty($_SESSION['user_id'])) {
 </head>
 
 <body>
+    
     <?php require_once(__DIR__ . '\navbar.php'); ?>
 
     <?php

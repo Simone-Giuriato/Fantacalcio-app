@@ -44,6 +44,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         
            Squadra
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -56,7 +57,7 @@
            Classifica
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Visualizza</a></li>
+            <li><a class="dropdown-item" href="getRanking.php">Visualizza</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -66,17 +67,12 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#">Visualizza</a></li>           
           </ul>
-          <a href="../function/logout.php">
+        </li>
+      </ul>
+      <a href="../function/logout.php">
                     <button type="button" class="btn btn-outline-danger">Esci
                     </button>
           </a>
-        </li>
-
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
