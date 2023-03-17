@@ -65,7 +65,7 @@
            Campionato
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Visualizza</a></li>           
+            <li><a class="dropdown-item" href="champion.php">Visualizza</a></li>           
           </ul>
         </li>
       </ul>
