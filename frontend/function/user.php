@@ -36,7 +36,7 @@ function login($data)
     }
 }
 
-function logon($data)
+function logo1n($data)
 {
     $url = 'http://localhost/fantacalcio-app/backend/api/user/registration.php';
 

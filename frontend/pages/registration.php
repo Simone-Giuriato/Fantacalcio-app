@@ -8,14 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
 <body>
     <form class="form-signin" method="post">
         <div class="row">
             <div class="col-7 mx-auto">
-                <img class="mb-4" src="../assets/img/logo.png" alt="" width="100%" height="">
+                <img class="mb-4" src="../assets/img/logo1.png" alt="" width="100%" height="">
             </div>
         </div>
         <h1 class="h3 mb-3 fw-bold">Inserisci le credenziali</h1>
@@ -41,7 +41,7 @@
                     "pw" => $pw,
                 );
 
-                $err = logon($data);
+                $err = logo1n($data);
                 if ($err == "-1") {
                     echo ('<p class="text-danger">Errore nella registrazione, riprova più tardi!</p>');
                 }

@@ -17,7 +17,7 @@ if (empty($_SESSION['user_id'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
 <body>
@@ -32,14 +32,14 @@ if (empty($_SESSION['user_id'])) {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/img/moumanette.png" class="d-block w-100" alt="...">
+      <img src="../assets/img/spalletti.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Josè Mourinho</h5>
         <p>Mourinho squalificato 2 giornate per insulti all'arbitro.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/img/inzaghi.png" class="d-block w-100" alt="...">
+      <img src="../assets/img/allegri.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Simone Inzaghi</h5>
         <p>Spiaze... per il gorgonzola</p>
