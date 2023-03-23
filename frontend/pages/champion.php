@@ -16,7 +16,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body>
+<body style="background-color:	#f5f5dc">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
 
     <div class="container px-3 py-3">
@@ -56,7 +56,7 @@ if (empty($_SESSION['user_id'])) {
 
         <?php if ($check == 0): ?>
             <form method="post">
-                <button class="btn btn-success mt-3" type="submit">Simula una nuova giornata</button>
+                <button class="btn  mt-3 btn btn-outline-dark" type="submit">Simula una nuova giornata</button>
             </form>
         <?php endif ?>
 

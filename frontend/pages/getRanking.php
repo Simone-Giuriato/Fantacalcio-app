@@ -20,7 +20,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body>
+<body style="background-color:	#f5f5dc">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
     <?php
     include_once dirname(__FILE__) . '/../function/league.php';
@@ -49,7 +49,7 @@ if (empty($_SESSION['user_id'])) {
                         <th scope="col">Punteggio</th>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider">
+                <tbody class="table-group-divider table-info">
                     <?php foreach ($ranking as $row): ?>
                         <tr>
                             <td>
@@ -73,14 +73,6 @@ if (empty($_SESSION['user_id'])) {
                         <?php echo ($numbermatch) ?>
                     </b>
                 </h2>
-
-                <div class="progress" role="progressbar" aria-label="Basic example"
-                    aria-valuenow="<?php echo ($numbermatch) ?>" aria-valuemin="0" aria-valuemax="38">
-                    <?php
-                    $area = ($numbermatch / 38) * 100;
-                    ?>
-                    <div class="progress-bar" style="width: <?php echo ($area) ?>%"></div>
-                </div>
             </div>
         </div>
     <?php endif ?>

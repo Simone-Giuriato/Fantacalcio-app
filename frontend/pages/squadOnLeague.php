@@ -16,7 +16,7 @@ if (empty($_SESSION['user_id'])) {
 <!doctype html>
 <html lang="en">
 
-<head>
+<head style="background-color:	#f5f5dc">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fantacalcio | Asta</title>

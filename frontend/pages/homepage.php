@@ -20,7 +20,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body>
+<body style="background-color:	#f5f5dc">
 
 <?php require_once(__DIR__ . '\navbar.php'); ?>
 
@@ -38,7 +38,7 @@ if (empty($_SESSION['user_id'])) {
       <img src="../assets/img/allegri.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Max Allegri</h5>
-        <p>Una juve in rimonta</p>
+        <p>Rimonta Champions Lague?</p>
       </div>
     </div>
     <div class="carousel-item">

@@ -22,7 +22,7 @@ if (empty($_SESSION['user_id'])) {
 
 
 
-<body>
+<body style="background-color:	#f5f5dc">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
     
     <div class="mx-auto" style="width: 50%; padding: 30px 0px">
