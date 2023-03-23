@@ -24,7 +24,10 @@ if (empty($_SESSION['user_id'])) {
 
 <?php require_once(__DIR__ . '\navbar.php'); ?>
 
+
 <div id="carouselExampleCaptions" class="carousel slide">
+<h2>Ultime news:</h2>
+<hr>
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -32,24 +35,24 @@ if (empty($_SESSION['user_id'])) {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/img/spalletti.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Josè Mourinho</h5>
-        <p>Mourinho squalificato 2 giornate per insulti all'arbitro.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
       <img src="../assets/img/allegri.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Simone Inzaghi</h5>
-        <p>Spiaze... per il gorgonzola</p>
+        <h5>Max Allegri</h5>
+        <p>Una juve in rimonta</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/img/allegri.png" class="d-block w-100" alt="...">
+      <img src="../assets/img/spalletti.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Max Allegri</h5>
-        <p>Ma c'è poco da stare allegri.</p>
+        <h5>Luciano spalletti</h5>
+        <p>Un Napoli da Record Azzuro</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/figc.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        
+        <p>Entra a far parte della Figc</p>
       </div>
     </div>
   </div>
