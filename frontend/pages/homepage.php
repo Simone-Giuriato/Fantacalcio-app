@@ -35,21 +35,27 @@ if (empty($_SESSION['user_id'])) {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <a href="https://www.ilbianconero.com/a/juve-la-champions-e-ancora-possibile-il-pensiero-di-rabiot-32771" target="_blank">
       <img src="../assets/img/allegri.jpg" class="d-block w-100" alt="...">
+</a>
       <div class="carousel-caption d-none d-md-block">
         <h5>Max Allegri</h5>
-        <p>Rimonta Champions Lague?</p>
+        <p>Rimonta Champions League?</p>
       </div>
     </div>
     <div class="carousel-item">
+    <a href="https://sport.sky.it/calcio/serie-a/2023/02/26/napoli-juve-102-punti-confronto" target="_blank">
       <img src="../assets/img/spalletti.jpg" class="d-block w-100" alt="...">
+</a>
       <div class="carousel-caption d-none d-md-block">
         <h5>Luciano spalletti</h5>
         <p>Un Napoli da Record Azzuro</p>
       </div>
     </div>
     <div class="carousel-item">
+    <a href="https://www.figc.it/" target="_blank">
       <img src="../assets/img/figc.jpg" class="d-block w-100" alt="...">
+</a>
       <div class="carousel-caption d-none d-md-block">
         
         <p>Entra a far parte della Figc</p>
