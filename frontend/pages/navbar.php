@@ -40,20 +40,14 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Classifica
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="getRanking.php">Visualizza</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="getRanking.php">Classifica</a>
+        </li>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Campionato
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="champion.php">Visualizza</a></li>           
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="champion.php">Campionato</a>
+        </li>
         </li>
       </ul>
       <a href="../function/logo1ut.php">
@@ -64,7 +58,7 @@
   </div>
 </nav>
 
-<!-- manca un pezzo di php-->
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"       

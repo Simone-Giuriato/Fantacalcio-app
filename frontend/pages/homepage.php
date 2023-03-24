@@ -4,7 +4,7 @@ session_start();
 if (empty($_SESSION['user_id'])) {
     header('location: ../login.php');
 }
-//manca della roba per direzinare l'utente nella lega 
+
 ?>
 
 <!doctype html>

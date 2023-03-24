@@ -39,6 +39,7 @@ if (empty($_SESSION['user_id'])) {
             echo ('<p class="text-danger">Non sono state ancora simulate le prime partite.</p>');
         }
         ?>
+        
         <?php if ($numbermatch != -1): ?>
             <h2>Classifica</h2>
             <table class="table">
