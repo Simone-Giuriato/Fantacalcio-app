@@ -57,7 +57,7 @@ if (empty($_SESSION['user_id'])) {
         <div class="container mt-5 mb-4">
             <div id="league" value="<?php echo $_SESSION['id_league'] ?>"></div>
             <div id="squad" value="<?php echo $_SESSION['id_squad'] ?>"></div>
-            <canvas class="mt-5" id="myChart"></canvas>
+            
         </div>
     </div>
 
