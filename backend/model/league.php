@@ -57,6 +57,11 @@ class League{
         order by s.score desc;";
         return $sql;
     }
+    /*function closeLeague($id_league)
+    {
+        $sql = "Update fantacalcio.league set status='1' where id = " . $id_league . "; ";
+        return $sql;
+    }*/
 
 }
 ?>

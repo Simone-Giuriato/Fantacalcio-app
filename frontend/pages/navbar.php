@@ -50,7 +50,7 @@
         </li>
         </li>
       </ul>
-      <a href="../function/logo1ut.php">
+      <a href="../function/logout.php">
                     <button type="button" class="btn btn-outline-danger">Esci
                     </button>
           </a>
