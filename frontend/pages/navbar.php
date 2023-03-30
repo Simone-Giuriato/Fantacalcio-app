@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
   
-        <li class="nav-item dropdown">
+       <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Leghe
           </a>
@@ -28,16 +28,36 @@
             <li><a class="dropdown-item" href="createLeague.php">Crea una lega</a></li>
             <li><a class="dropdown-item" href="archiveLeague.php">Visualizza o partecipa alle leghe</a></li>
           </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-         
+        </li>-->
+        <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">        
            Squadra
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="getMySquad.php">Visualizza</a></li>
             <li><a class="dropdown-item" href="squadOnLeague.php">Fai squadra</a></li>
           </ul>
+        </li>-->
+        
+        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="archiveLeague.php">Partecipa Lega</a>
+        </li>
+        </li>
+        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="createLeague.php">Crea Lega</a>
+        </li>
+        </li>
+        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="getMySquad.php">Squadra</a>
+        </li>
+        </li>
+        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="squadOnLeague.php">Asta</a>
+        </li>
         </li>
         <li class="nav-item dropdown">
         <li class="nav-item">
