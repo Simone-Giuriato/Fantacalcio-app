@@ -21,7 +21,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body style="background-color:	#f5f5dc">
+<body style="background-color:#ffebcd">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
     <?php
     include_once dirname(__FILE__) . '/../function/league.php';
@@ -51,7 +51,7 @@ if (empty($_SESSION['user_id'])) {
                         <th scope="col">Punteggio</th>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider table-info">
+                <tbody class="table-group-divider table-light">
                     <?php foreach ($ranking as $row): ?>
                         <tr>
                             <td>

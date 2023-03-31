@@ -22,7 +22,7 @@ if (empty($_SESSION['user_id'])) {
 
 
 
-<body style="background-color:	#f5f5dc">
+<body style="background-color:#ffebcd">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
     
     <div class="mx-auto" style="width: 50%; padding: 30px 0px">
@@ -43,7 +43,7 @@ if (empty($_SESSION['user_id'])) {
                 <?php endif ?>
                 <?php if (!empty($_SESSION['id_league']) || !empty($_SESSION['id_squad'])): ?>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Invia
                     </button>
 

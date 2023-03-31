@@ -19,7 +19,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body style="background-color:	#f5f5dc">
+<body style="background-color: #ffebcd">
     <?php require_once(__DIR__ . '\navbar.php');
     include_once dirname(__FILE__) . '/../function/league.php';
     $squad = getSquadJoinLeague($_GET['id_league']);

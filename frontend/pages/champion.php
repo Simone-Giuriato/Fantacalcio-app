@@ -16,7 +16,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body style="background-color:	#f5f5dc">
+<body style="background-color:#ffebcd">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
 
     <div class="container px-3 py-3">
@@ -79,7 +79,6 @@ if (empty($_SESSION['user_id'])) {
             <h2> Punteggi della giornata:
                 <?php echo $numbermatch ?>
             </h2>
-
             <?php
             $match = getLastMatch($_SESSION['id_league'], $numbermatch);
             ?>
@@ -88,7 +87,7 @@ if (empty($_SESSION['user_id'])) {
                     <ol class="list-group">
                         <?php foreach ($match as $row): ?>
                             <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
+                                <div class="ms-2 me-auto" >
                                     <div class="fw-bold">
                                         <?php echo ($row['name']) ?>
                                     </div>
@@ -112,3 +111,4 @@ if (empty($_SESSION['user_id'])) {
 </body>
 
 </html>
+

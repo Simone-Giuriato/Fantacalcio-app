@@ -21,7 +21,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body style="background-color:	#f5f5dc">
+<body style="background-color:#ffebcd">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
 
     <?php
@@ -55,7 +55,7 @@ if (empty($_SESSION['user_id'])) {
                                 <!--<?php //if (empty($_SESSION['id_league'])): ?>-->
                                     <a
                                         href="joinLeague.php?id_league=<?php echo ($row['id']) ?>&name=<?php echo ($row['name']) ?>">
-                                        <button class="btn btn-outline-primary">Iscriviti</button>
+                                        <button class="btn btn-outline-dark">Iscriviti</button>
                                     </a>
                                 <!--<?php //endif ?>-->
                             </div>

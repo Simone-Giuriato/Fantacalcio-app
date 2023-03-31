@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo1.png">
 </head>
 
-<body>
+<body style="background-color:#ffebcd">
     <form class="form-signin" method="post">
         <div class="row">
             <div class="col-7 mx-auto">

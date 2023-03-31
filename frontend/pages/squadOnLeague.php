@@ -26,7 +26,7 @@ if (empty($_SESSION['user_id'])) {
     <link rel="icon" type="image/x-icon" href="../assets/img/logo1.png">
 </head>
 
-<body>
+<body style="background-color:#ffebcd">
     <?php require_once(__DIR__ . '\navbar.php'); ?>
 
     <?php
@@ -57,7 +57,7 @@ if (empty($_SESSION['user_id'])) {
                             </div>
                             <div class="col-md-3 mt-4">
                                 <a href="addPlayerToSquad.php?id_squad=<?php echo ($row['id']) ?>">
-                                    <button class="btn btn-outline-primary">Visualizza</button>
+                                    <button class="btn btn-outline-dark">Visualizza</button>
                                 </a>
                             </div>
                         </div>
