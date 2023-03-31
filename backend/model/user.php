@@ -35,5 +35,6 @@ class User extends BaseController
         $result = $this->conn->query($sql);
         return $result;
     }
+    
 }
 ?>

@@ -12,7 +12,7 @@
 <nav class="navbar navbar-expand-lg bg-info-subtle">        <!-- background-bootstrap-->
   <div class="container-fluid">
   <a class="navbar-brand" href="homepage.php">
-      <img src="../assets/img/logo1.png" alt="Bootstrap" width="30" height="24">
+      <img src="../assets/img/logo1.png" alt="Bootstrap" width="40" height="35">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

@@ -64,7 +64,7 @@ if (empty($_SESSION['user_id'])) {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $res = simulateMatch($_SESSION['id_league']);
             if ($res['message'] == "1") {
-                header("Refresh:0");
+                header("Refresh:0");//campionato concluso non funziona
             } elseif ($res['message'] == "Campionato concluso") {
                 unset($_SESSION['id_squad']);
                 unset($_SESSION['id_league']);
