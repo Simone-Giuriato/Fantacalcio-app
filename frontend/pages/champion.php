@@ -35,17 +35,6 @@ if (empty($_SESSION['user_id'])) {
                         <?php echo ($numbermatch) ?>
                     </b>
                 </h2>
-
-                <div class="progress" id="league" value="<?php echo $_SESSION['id_league'] ?>" role="progressbar"
-                    aria-label="Basic example" aria-valuenow="<?php echo ($numbermatch) ?>" aria-valuemin="0"
-                    aria-valuemax="38">
-                    <?php
-                    $area = ($numbermatch / 38) * 100;
-
-                    ?>
-                    <div class="progress-bar" id="progress-matches" value="<?php echo ($numbermatch) ?>"
-                        style="width: <?php echo ($area) ?>%"></div>
-                </div>
             </div>
         <?php endif ?>
 

@@ -39,7 +39,7 @@ if (empty($_SESSION['user_id'])) {
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 g-1 mt-4">
             <?php foreach ($squad as $row): ?>
                 <div class="col">
-                    <div class="card mb-3">
+                    <div class="card mb-3" style="max-width: 80%;">
                         <div class="row g-0">
                             <div class="col-md-5">
                                 <img src="../assets/img/logo1.png" class="img-thumbnail" alt="..."

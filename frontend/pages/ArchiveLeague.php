@@ -34,7 +34,7 @@ if (empty($_SESSION['user_id'])) {
         <h2>Elenco leghe:</h2>
 
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 g-1 mt-4">
             <?php foreach ($league as $row): ?>
                 <div class="col">
                     <div class="card mb-3" style="max-width: 80%;">
