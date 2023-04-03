@@ -33,7 +33,7 @@ if (empty($_SESSION['user_id'])) {
     ?>
 
     <div class="container pt-3 px-5">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-2">
+        <div class="container position-relative mt-4">
             <div class="col mb-3">
                 <h2 class="mb-3">La tua squadra:
                     <b>
@@ -43,7 +43,7 @@ if (empty($_SESSION['user_id'])) {
                 <?php
                 $player = getPlayerOfSquad($_SESSION['id_squad']);
                 ?>
-                <ul class="list-group">
+               <!--<ul class="list-group">
                     <?php foreach ($player as $row): ?>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <?php echo ($row['surname']) ?>
@@ -52,8 +52,37 @@ if (empty($_SESSION['user_id'])) {
                             </span>
                         </li>
                     <?php endforeach ?>
-                </ul>
-            </div>
+                </ul>-->
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 g-1 mt-4">
+            <?php foreach ($player as $row): ?>
+                <div class="col">
+                    <div class="card mb-7" style="max-width: 80%;">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                            <img src="../assets/img/player.png" class="img-thumbnail" alt="..."
+                                    style="width: 60px; height:60px; ">
+                            
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <?php echo ($row['surname']) ?>
+                            </li>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2">
+                            <span class="badge bg-dark px-3 py-3">
+                                <?php echo ($row['role']) ?>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
+        </div>
+
+                
         </div>
         <div class="container mt-5 mb-4">
             <div id="league" value="<?php echo $_SESSION['id_league'] ?>"></div>
@@ -72,10 +101,6 @@ if (empty($_SESSION['user_id'])) {
 
 </html>
 
-<style>
 
-   
-
-</style>
 
 

@@ -40,6 +40,8 @@ if (empty($_SESSION['user_id'])) {
                     <div class="card mb-3" style="max-width: 80%;">
                         <div class="row g-0">
                             <div class="col-md-5">
+                            <img src="../assets/img/league.png" class="img-thumbnail" alt="..."
+                                    style="width: 100px; height:100px; ">
                             </div>
                             <div class="col-md-4">
                                 <div class="card-body">

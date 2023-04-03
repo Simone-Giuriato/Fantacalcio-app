@@ -33,11 +33,14 @@
           <a class="nav-link active" aria-current="page" href="squadOnLeague.php">Asta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="getRanking.php">Classifica</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="champion.php">Campionato</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="getRanking.php">Classifica</a>
+        </li>
+        <li>
+
+        
       </ul>
       <a href="../function/logout.php">
                     <button type="button" class="btn btn-outline-danger">Esci

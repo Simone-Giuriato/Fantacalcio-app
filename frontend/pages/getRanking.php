@@ -41,8 +41,17 @@ if (empty($_SESSION['user_id'])) {
         }
         ?>
         
+        
         <?php if ($numbermatch != -1): ?>
-            <h2>Classifica</h2>
+            <div class="container">
+            <div class="container mt-4">
+                <h2>Classifica dopo  <b>
+                        <?php echo ($numbermatch) ?> 
+                    </b>
+                    giornate: </h2>
+            </div>
+        </div>
+        <hr>
             <table class="table">
                 <thead>
                     <tr>
@@ -51,7 +60,7 @@ if (empty($_SESSION['user_id'])) {
                         <th scope="col">Punteggio</th>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider table-light">
+                <tbody class="table-group-divider table-dark">
                     <?php foreach ($ranking as $row): ?>
                         <tr>
                             <td>
@@ -69,14 +78,7 @@ if (empty($_SESSION['user_id'])) {
             </table>
         </div>
 
-        <div class="container">
-            <div class="container mt-3">
-                <h2>Giornata numero: <b>
-                        <?php echo ($numbermatch) ?>
-                    </b>
-                </h2>
-            </div>
-        </div>
+        
     <?php endif ?>
     </div>
 

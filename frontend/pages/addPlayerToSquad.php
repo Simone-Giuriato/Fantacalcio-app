@@ -39,7 +39,7 @@ if (empty($_SESSION['user_id'])) {
     $player = getArchivePlayer();
     ?>
     <div class="mx-auto" style="width: 50%; padding: 30px 0px">
-        <h2>Inserisci i calciatori!</h2>
+        <h2>Fai l'Asta!!!</h2>
         <form method="post" style="margin-top: 20px;">
             <div class="mb-3">
                 <label for="name" class="form-label">Squadra: <b>
@@ -53,7 +53,11 @@ if (empty($_SESSION['user_id'])) {
                     <select class="form-select" name="id_player" id="inputGroupSelect02" required>
                         <option selected disabled>Seleziona calciatore!</option>
                         <?php foreach ($player as $row): ?>
-                            <option value="<?php echo $row['id'] ?>"><?php echo $row['surname'] ?>
+                            
+                            <option value="<?php echo $row['id'] ?>"> 
+                            <div class="col-md-3 mt-2">
+                                <?php echo ($row['role']) ?>
+                            </div><?php echo $row['surname'] ?>
                             </option>
                         <?php endforeach ?>
                     </select>
@@ -62,7 +66,7 @@ if (empty($_SESSION['user_id'])) {
             <div class="mb-3">
                 <?php if ($nPlayer == 11): ?>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Invia
                     </button>
 
@@ -92,7 +96,7 @@ if (empty($_SESSION['user_id'])) {
                     </div>
                 <?php endif ?>
                 <?php if ($nPlayer < 11): ?>
-                    <button class="btn btn-primary" type="submit">Invia</button>
+                    <button class="btn btn-dark" type="submit">Invia</button>
                 <?php endif ?>
             </div>
         </form>
@@ -130,10 +134,7 @@ if (empty($_SESSION['user_id'])) {
                 </b>
             </h2>
 
-            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="<?php echo $nPlayer ?>"
-                aria-valuemin="0" aria-valuemax="11">
-                <div class="progress-bar" style="width: <?php echo $area ?>%;"></div>
-            </div>
+           
         </div>
 
     </div>

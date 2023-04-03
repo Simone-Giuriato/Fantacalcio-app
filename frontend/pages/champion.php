@@ -29,25 +29,21 @@ if (empty($_SESSION['user_id'])) {
         }
         ?>
 
-        <?php if ($numbermatch != -1): ?>
+       <!-- <?php if ($numbermatch != -1): ?>
             <div class="container mt-3">
                 <h2>Giornata numero: <b>
                         <?php echo ($numbermatch) ?>
                     </b>
                 </h2>
             </div>
-        <?php endif ?>
+        <?php endif ?>-->
 
         <?php
         include_once dirname(__FILE__) . '/../function/league.php';
         $check = checkTrustee($_SESSION['user_id']);
         ?>
 
-        <?php if ($check == 0): ?>
-            <form method="post">
-                <button class="btn  mt-3 btn btn-outline-dark" type="submit">Simula una nuova giornata</button>
-            </form>
-        <?php endif ?>
+       
 
         <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -62,7 +58,7 @@ if (empty($_SESSION['user_id'])) {
         }
         ?>
 
-        <hr>
+        <br>
         <?php if ($numbermatch != -1): ?>
 
             <h2> Punteggi della giornata:
@@ -75,13 +71,13 @@ if (empty($_SESSION['user_id'])) {
                 <div class="container mt-4">
                     <ol class="list-group">
                         <?php foreach ($match as $row): ?>
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <li class="list-group-item d-flex justify-content-between align-items-start " >
                                 <div class="ms-2 me-auto" >
                                     <div class="fw-bold">
                                         <?php echo ($row['name']) ?>
                                     </div>
                                 </div>
-                                <span class="badge bg-primary rounded-pill">
+                                <span class="badge bg-dark rounded-pill">
                                     <?php echo ($row['score']) ?>
                                 </span>
                             </li>
@@ -89,6 +85,12 @@ if (empty($_SESSION['user_id'])) {
                     </ol>
                 </div>
             <?php endif ?>
+
+            <?php if ($check == 0): ?>
+            <form method="post">
+                <button class="btn  mt-3 btn btn-outline-dark" type="submit">Simula una nuova giornata</button>
+            </form>
+        <?php endif ?>
 
         <?php endif ?>
 
@@ -100,4 +102,5 @@ if (empty($_SESSION['user_id'])) {
 </body>
 
 </html>
+
 
