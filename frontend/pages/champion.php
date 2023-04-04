@@ -29,14 +29,14 @@ if (empty($_SESSION['user_id'])) {
         }
         ?>
 
-       <!-- <?php if ($numbermatch != -1): ?>
+       <?php if ($numbermatch != -1): ?>
             <div class="container mt-3">
                 <h2>Giornata numero: <b>
                         <?php echo ($numbermatch) ?>
                     </b>
                 </h2>
             </div>
-        <?php endif ?>-->
+        <?php endif ?>
 
         <?php
         include_once dirname(__FILE__) . '/../function/league.php';

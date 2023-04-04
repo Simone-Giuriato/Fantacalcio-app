@@ -32,7 +32,7 @@ if (empty($_SESSION['user_id'])) {
                 <label for="name" class="form-label"><b>Nome della lega</b></label>
                 <input type="text" class="form-control" placeholder="Nome della tua lega" name="name_league" required>
             </div>
-            <hr>
+            
             <div class="mb-3">
                 <label for="name" class="form-label"><b>Nome della tua squadra</b></label>
                 <input type="text" class="form-control" placeholder="Nome della tua squadra" name="name_squad" required>

@@ -42,9 +42,11 @@
 
         
       </ul>
+      <a href="https://twitter.com/?lang=it" target="_blank"><img src="../assets/img/twitter.png" alt="Bootstrap" width="40" height="35" class="img" hspace="10px;"><a>
+      <a href="https://it-it.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Bootstrap" width="40" height="35" class="img" hspace="10px;"><a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Bootstrap" width="40" height="35" class="img" hspace="10px;"><a>
       <a href="../function/logout.php">
-                    <button type="button" class="btn btn-outline-danger">Esci
-                    </button>
+      <button type="button" class="btn btn-light">Esci </button>
           </a>
     </div>
   </div>
@@ -60,6 +62,8 @@
 </body>
 
 </html>
+
+
 
 
 

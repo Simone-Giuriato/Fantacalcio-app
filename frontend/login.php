@@ -73,7 +73,8 @@
         ?>
 
         <div class="row">
-            <button class="btn btn-lg btn-primary btn-block mx-auto" type="submit">Accedi</button>
+            <button class="btn btn-lg btn-dark btn-block mx-auto" type="submit">Accedi</button>
+            <hr>
             <div class="row">
                 <a class="text-dark" href="pages/registration.php" style="text-decoration: none; font-size:13px;">
                     <u>Non hai ancora un account, registrati ora!</u>

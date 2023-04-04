@@ -36,7 +36,7 @@ if (empty($_SESSION['user_id'])) {
                         <?php foreach ($squad as $row): ?>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <?php echo ($row['name']) ?>
-                                <span class="badge bg-primary px-3 py-3">
+                                <span class="badge bg-dark px-3 py-3">
                                     <?php echo ($row['nickname']) ?>
                                 </span>
                             </li>
@@ -56,11 +56,11 @@ if (empty($_SESSION['user_id'])) {
                     </div>
                     <div class="mb-3">
                         <?php if (empty($_SESSION['id_league']) && empty($_SESSION['id_squad'])): ?>
-                            <button class="btn btn-primary" type="submit">Invia</button>
+                            <button class="btn btn-dark" type="submit">Invia</button>
                         <?php endif ?>
                         <?php if (!empty($_SESSION['id_league']) || !empty($_SESSION['id_squad'])): ?>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">
                                 Invia
                             </button>

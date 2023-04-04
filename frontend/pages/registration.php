@@ -49,7 +49,7 @@
         }
         ?>
         <div class="row">
-            <button class="btn btn-lg btn-primary btn-block mx-auto" type="submit">Registrati</button>
+            <button class="btn btn-lg btn-dark btn-block mx-auto" type="submit">Registrati</button>
         </div>
     </form>
 
