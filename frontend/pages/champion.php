@@ -23,7 +23,7 @@ if (empty($_SESSION['user_id'])) {
 
         <?php
         include_once dirname(__FILE__) . '/../function/match.php';
-        $numbermatch = getLastNumberMatch($_SESSION['id_league']);
+        $numbermatch = getLastNumberMatch($_SESSION['id_league']); //piccolom problema con prima giornata tocca fare manualmente
         if ($numbermatch == -1) {
             echo ('<p class="text-danger">Non sono state ancora simulate le prime partite.</p>');
         }
