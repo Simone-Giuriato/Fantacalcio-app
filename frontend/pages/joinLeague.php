@@ -28,28 +28,8 @@ if (empty($_SESSION['user_id'])) {
     <div class="container mt-3">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-2">
             <div class="col">
-                <h2>Lega: <b>
-                        <?php echo ($_GET['name']) ?>
-                    </b></h2>
-                <?php if ($squad != -1): ?>
-                    <ul class="list-group mt-3">
-                        <?php foreach ($squad as $row): ?>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <?php echo ($row['name']) ?>
-                                <span class="badge bg-dark px-3 py-3">
-                                    <?php echo ($row['nickname']) ?>
-                                </span>
-                            </li>
-                        <?php endforeach ?>
-                    </ul>
-                <?php endif ?>
-                <?php if ($squad == -1): ?>
-                    <p class="text-danger">Non ci sono squadre iscritte a questa lega</p>
-                <?php endif ?>
-            </div>
-            <div class="col">
-                <form method="post" class="mt-3 px-5 py-5">
-                    <div class="mb-3">
+            <form method="post" class=" px-4 py-5">
+                    <div class="mb-2">
                         <label for="name" class="form-label"><b>Nome della tua squadra</b></label>
                         <input type="text" class="form-control" placeholder="Nome della tua squadra" name="name_squad"
                             required>
@@ -60,8 +40,7 @@ if (empty($_SESSION['user_id'])) {
                         <?php endif ?>
                         <?php if (!empty($_SESSION['id_league']) || !empty($_SESSION['id_squad'])): ?>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" style="width:100%;" data-bs-target="#staticBackdrop">
                                 Invia
                             </button>
 
@@ -98,6 +77,27 @@ if (empty($_SESSION['user_id'])) {
                         <?php endif ?>
                     </div>
                 </form>
+            </div>
+            <div class="col">
+            <h2>Lega: <b>
+                        <?php echo ($_GET['name']) ?>
+                    </b></h2>
+                <?php if ($squad != -1): ?>
+                    <ul class="list-group mt-3">
+                        <?php foreach ($squad as $row): ?>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <?php echo ($row['name']) ?>
+                                <span class="badge bg-dark px-3 py-3">
+                                    <?php echo ($row['nickname']) ?>
+                                </span>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
+                <?php endif ?>
+                <?php if ($squad == -1): ?>
+                    <p class="text-danger">Non ci sono squadre iscritte a questa lega</p>
+                <?php endif ?>
+                
             </div>
         </div>
     </div>

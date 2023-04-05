@@ -28,7 +28,7 @@ if (empty($_SESSION['user_id'])) {
     <div class="mx-auto" style="width: 50%; padding: 30px 0px">
         <h2>Crea la tua lega!</h2>
         <form method="post" style="margin-top: 20px;">
-            <div class="mb-3">
+            <div class="mb-4">
                 <label for="name" class="form-label"><b>Nome della lega</b></label>
                 <input type="text" class="form-control" placeholder="Nome della tua lega" name="name_league" required>
             </div>
