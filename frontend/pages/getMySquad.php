@@ -60,9 +60,7 @@ if (empty($_SESSION['user_id'])) {
                     <div class="card mb-7" style="max-width: 80%;">
                         <div class="row g-0">
                             <div class="col-md-5">
-                            <img src="../assets/img/player.png" class="img-thumbnail" alt="..."
-                                    style="width: 60px; height:60px; ">
-                            
+                            <img src="../assets/img/player.png" class="img-thumbnail" alt="..." style="width: 60px; height:60px; ">
                             </div>
                             <div class="col-md-4">
                                 <div class="card-body">
