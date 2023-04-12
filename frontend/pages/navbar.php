@@ -35,9 +35,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="champion.php">Campionato</a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link active" aria-current="page" href="getRanking.php">Classifica</a>
-        </li>
+        </li>-->
         <li>
 
         
