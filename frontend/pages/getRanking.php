@@ -1,4 +1,5 @@
 <?php
+//pagina rimossa 
 
 session_start();
 error_reporting(0);
