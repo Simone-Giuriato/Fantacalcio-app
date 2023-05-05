@@ -12,7 +12,7 @@ if (empty($_SESSION['user_id'])) {
         header('location: homepage.php');
     }
     $nPlayer = getNumberPlayer($_GET['id_squad']);
-    $area = ($nPlayer / 11) * 100;
+   
 }
 ?>
 

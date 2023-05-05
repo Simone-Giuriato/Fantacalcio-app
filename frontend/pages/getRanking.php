@@ -1,5 +1,5 @@
 <?php
-//pagina rimossa 
+//pagina rimossa, la classifica viene messa nel campionato
 
 session_start();
 error_reporting(0);
